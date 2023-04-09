@@ -3,7 +3,6 @@ import './App.css';
 import Employe from './components/Employe';
 
 function App() {
-  console.log('we are about to list the employees');
   let showEmployees =true;
 
   return (
@@ -11,10 +10,10 @@ function App() {
       {console.log('inside the return ')}
       {showEmployees ?
       <>
-      <Employe/> 
-      <Employe/> 
-      <Employe/> 
-      <Employe/>
+      <Employe  name= "Axel" role = "Intern"/> 
+      <Employe name='Abey'/> 
+      <Employe name='Jphn'/> 
+      
       </>
       :
       <p>You cannot see the employees</p>

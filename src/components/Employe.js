@@ -1,8 +1,15 @@
 import React from 'react'
 
-function Employe() {
+function Employe(props) {
     return (
-        <h3>Here's an employe</h3>
+        <>
+
+         <h3>Employe {props.name}</h3>
+         <p>{props.role ? props.role : "No role"}</p>
+
+        </>
+       
+
         
     )
 }
